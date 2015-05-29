@@ -4,7 +4,7 @@ version := "1.0-SNAPSHOT"
 
 scalaVersion := "2.11.5" // or "2.10.4"
 
-publishTo := Some(Resolver.file("file",  new File( "/Users/nick/tmp/glowing-bear/releases" )) )
+publishTo := Some(Resolver.file("file",  new File( Path.userHome.absolutePath + "/tmp/glowing-bear/releases" )) )
 
 libraryDependencies ++= Seq(
   "org.webjars" %% "webjars-play" % "2.3.0-2",
